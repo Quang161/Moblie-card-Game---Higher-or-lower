@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Classic_Mode"
+    android:background="@drawable/background_2">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:id="@+id/textClassicMode"
+        android:text="classic mode"
+        android:textSize="50sp"
+        android:textColor="@color/Classic"
+        android:fontFamily="@font/moon">
+    </TextView>
+
+    <TextView
+        android:id="@+id/livesTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textClassicMode"
+        android:layout_marginLeft="20dp"
+        android:text="Lives: 3"
+        android:textSize="30sp"
+        android:textColor="@color/Exit"
+        android:fontFamily="@font/blugide">
+    </TextView>
+
+    <TextView
+        android:id="@+id/roundsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textClassicMode"
+        android:layout_marginLeft="240dp"
+        android:textSize="30sp"
+        android:text="Round: 0"
+        android:textColor="@color/Red"
+        android:fontFamily="@font/blugide">
+    </TextView>
+
+    <ImageView
+        android:id="@+id/cardImageView"
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:layout_marginTop="100dp"
+        android:layout_below="@+id/textClassicMode"
+        android:layout_centerHorizontal="true">
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/resultImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="225dp"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/higherButton"
+            android:text="@string/Higher"
+            android:textSize="54sp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/Start"
+            android:fontFamily="@font/mightysouly">
+        </Button>
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/higherButton"
+            android:layout_marginTop="25dp"
+            android:id="@+id/lowerButton"
+            android:text="@string/Lower"
+            android:textSize="54sp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/Exit"
+            android:fontFamily="@font/mightysouly">
+        </Button>
+
+    </RelativeLayout>
+
+</RelativeLayout>

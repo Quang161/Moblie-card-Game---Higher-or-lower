@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="Gold">#FFEB3B</color>
+    <color name="Red">#E91E63</color>
+    <color name="Green">#4CAF50</color>
+    <color name="Brown">#4A2C2A </color>
+    <color name="Classic">#FABF0E</color>
+    <color name="Endless">#FABF0E</color>
+
+    <color name="Start">#8BC34A</color>
+    <color name="Continue">#03A9F4</color>
+    <color name="Exit">#F44336</color>
+</resources>

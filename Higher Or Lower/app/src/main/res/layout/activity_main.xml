@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background_1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/Title_1"
+        android:text="@string/Higher"
+        android:textSize="80sp"
+        android:textColor="@color/Gold"
+        android:textStyle="bold"
+        android:fontFamily="@font/scripto">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/Title_1"
+        android:layout_below="@id/Title_1"
+        android:layout_marginTop="-60dp"
+        android:layout_marginLeft="-120dp"
+        android:id="@+id/Title_2"
+        android:text="@string/Or"
+        android:textSize="60sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:fontFamily="@font/scripto">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/Title_2"
+        android:layout_below="@id/Title_2"
+        android:layout_marginTop="-60dp"
+        android:layout_marginLeft="-120dp"
+        android:id="@+id/Title_3"
+        android:text="@string/Lower"
+        android:textSize="80sp"
+        android:textColor="@color/Red"
+        android:textStyle="bold"
+        android:fontFamily="@font/scripto">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/Title_3"
+        android:layout_below="@id/Title_3"
+        android:layout_marginTop="-30dp"
+        android:layout_marginLeft="-240dp"
+        android:id="@+id/Title_4"
+        android:text="@string/Cards_Edition"
+        android:textSize="36sp"
+        android:textColor="@color/Green"
+        android:fontFamily="@font/mightysouly">
+    </TextView>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/Title_4"
+        android:layout_marginTop="150dp"
+        android:id="@+id/Play_button"
+        android:text="@string/Start"
+        android:textSize="48sp"
+        android:backgroundTint="@color/Start"
+        android:fontFamily="@font/mightysouly">
+    </Button>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/Play_button"
+        android:layout_marginTop="20dp"
+        android:id="@+id/Mode_button"
+        android:text="@string/Mode"
+        android:textSize="48sp"
+        android:backgroundTint="@color/Continue"
+        android:fontFamily="@font/mightysouly">
+    </Button>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/Mode_button"
+        android:layout_marginTop="20dp"
+        android:id="@+id/Exit_button"
+        android:text="@string/Exit"
+        android:textSize="48sp"
+        android:backgroundTint="@color/Exit"
+        android:fontFamily="@font/mightysouly">
+    </Button>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="-10dp"
+            android:id="@+id/facebook_icon"
+            android:src="@drawable/facebook">
+        </ImageView>
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/highscore"
+            android:src="@drawable/active">
+        </ImageView>
+
+        <ToggleButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/sound_toggle"
+            android:background="@drawable/soundon"
+            android:textOn=""
+            android:textOff="">
+        </ToggleButton>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Menu_Game"
+    android:background="@drawable/background_1">
+
+    <View
+        android:id="@+id/viewDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_centerVertical="true"
+        android:background="@android:color/black" />
+
+    <TextView
+        android:id="@+id/textClassicMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/moon"
+        android:text="Classic Mode"
+        android:textColor="@color/white"
+        android:textSize="48sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/c13card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textClassicMode"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:fontFamily="@font/blugide"
+        android:text="@string/t13_Card"
+        android:rotation="-5"
+        android:shadowColor="#000000"
+        android:shadowDx="10"
+        android:shadowDy="10"
+        android:shadowRadius="1.5"
+        android:textAllCaps="true"
+        android:textColor="@color/Green"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/c3lives"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/c13card"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="150dp"
+        android:fontFamily="@font/blugide"
+        android:text="@string/t3_Lives"
+        android:rotation="-5"
+        android:shadowColor="#000000"
+        android:shadowDx="10"
+        android:shadowDy="10"
+        android:shadowRadius="1.5"
+        android:textColor="@color/Red"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/play_classic"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textClassicMode"
+        android:layout_marginTop="150dp"
+        android:text="@string/Start"
+        android:textSize="40sp"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/blugide"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/viewDivider"
+        android:scaleType="centerCrop"
+        android:src="@drawable/endless"/>
+
+    <TextView
+        android:id="@+id/textEndlessMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="365dp"
+        android:layout_below="@id/textClassicMode"
+        android:fontFamily="@font/moon"
+        android:text="Endless Mode"
+        android:textColor="@color/Gold"
+        android:textSize="48sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/e3lives"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textEndlessMode"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:fontFamily="@font/blugide"
+        android:text="@string/t3_Lives"
+        android:rotation="-5"
+        android:shadowColor="#3A1D1D"
+        android:shadowDx="10"
+        android:shadowDy="10"
+        android:shadowRadius="1.5"
+        android:textColor="@color/Red"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/e1more"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textEndlessMode"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="110dp"
+        android:fontFamily="@font/blugide"
+        android:text="@string/t_1more"
+        android:rotation="-5"
+        android:shadowColor="#3A1D1D"
+        android:shadowDx="10"
+        android:shadowDy="10"
+        android:shadowRadius="1.5"
+        android:textColor="@color/Green"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/cTry"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/c13card"
+        android:layout_marginBottom="60dp"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="@font/blugide"
+        android:text="@string/t_Try"
+        android:rotation="-10"
+        android:shadowColor="#000000"
+        android:shadowDx="10"
+        android:shadowDy="10"
+        android:shadowRadius="1.5"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/eNoLimit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/e3lives"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="290dp"
+        android:fontFamily="@font/blugide"
+        android:text="@string/t_Limit"
+        android:rotation="10"
+        android:shadowColor="#3A1D1D"
+        android:shadowDx="10"
+        android:shadowDy="10"
+        android:shadowRadius="1.5"
+        android:textColor="@color/Gold"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/eGetHighScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/e3lives"
+        android:layout_marginBottom="60dp"
+        android:layout_marginLeft="30dp"
+        android:fontFamily="@font/blugide"
+        android:text="@string/t_Score"
+        android:rotation="-10"
+        android:shadowColor="#3A1D1D"
+        android:shadowDx="10"
+        android:shadowDy="10"
+        android:shadowRadius="1.5"
+        android:textColor="@color/Gold"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/play_endless"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textEndlessMode"
+        android:layout_marginTop="150dp"
+        android:text="@string/Start"
+        android:textSize="40sp"
+        android:textColor="@color/Brown"
+        android:backgroundTint="@color/Gold"
+        android:fontFamily="@font/blugide"/>
+
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Higher Or Lower</string>
+    <string name="Higher">Higher</string>
+    <string name="Or">Or</string>
+    <string name="Lower">Lower</string>
+    <string name="Cards_Edition">Cards Edition</string>
+
+    <string name="Start">Start</string>
+    <string name="Mode">Mode</string>
+    <string name="High_Score">Score</string>
+    <string name="Exit">Exit</string>
+
+    <string name="t13_Card">Thirteen Cards</string>
+    <string name="t3_Lives">Only three Lives</string>
+    <string name="t_1more">Gain 1 for every 3 win streak</string>
+    <string name="t_Try">Try your luck</string>
+    <string name="t_Limit">No Limit</string>
+    <string name="t_Score">Get HighScore</string>
+</resources>
